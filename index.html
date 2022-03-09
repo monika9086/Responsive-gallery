@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .div-1 {
+            max-width: 930px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: left;
+        }
+
+        p {
+            display: inline-block;
+            max-width: 930px;
+            text-align: justify;
+            font-size: 1.3em;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .p {
+                font-size: 1.2em;
+                width: 20%;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .p {
+                font-size: 1.1em;
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 512px) {
+            .p {
+                font-size: 1em;
+                width: 100%;
+            }
+        }
+
+        .row {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .row ::after {
+            content: '';
+            display: table;
+            clear: left;
+        }
+
+        .column {
+            float: left;
+            width: 16.66%;
+            box-sizing: border-box;
+            padding: 8px;
+        }
+
+        .box {
+            height: 100%;
+          /*  margin: 5%;*/
+            background-color: blue;
+            border-radius: 20px;
+        }
+
+        .box footer {
+            background: gray;
+            color: black;
+            text-align: center;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @media screen and (min-width: 1024px) {
+            .column {
+                width: 20%;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            .column {
+                width: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 512px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="div-1">
+
+        <h1>Gallery Heading</h1>
+
+        <div class="row">
+
+            <div class="column">
+                <div class="box"> <img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="box"><img src="placeholder-image.png" alt="Placeholder">
+                    <footer>Image Title</footer>
+                </div>
+            </div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a lacinia nici, nec tristique sem. Cras id
+            tellus
+            ac mauris posuere varius. Pellentesque vel mi justo. Aenean malesuada purus eu lacinia finibus. Praesent
+            commodo
+            euismod odio, eu pharetra nulla dignissim nec. Ut id nulla augue. Duis ultricies euismod purus, ut lobortis
+            tortor semper a. Nam eleifend accumsan slit, in elementum lacus. Nunc varius imperdiet nisi, eget pretium
+            augue
+            molestie a. Nullam ut malesuada enim. Integer non velit fringilla, porta ex vitae, porttitor velit. Ut
+            luctus
+            lacinia libero a scelerisque. Ut ullamcorper arcu at mauris ullamcorper tempor.</p>
+
+    </div>
+</body>
+
+</html>
